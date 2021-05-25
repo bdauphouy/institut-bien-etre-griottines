@@ -1,0 +1,95 @@
+.loader {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.loader h2 {
+  color: #745B33;
+}
+
+.loader.loaded {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#home {
+  padding: 50px 5%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#home div:first-of-type {
+  width: 50%;
+}
+
+#home p {
+  margin-top: 30px;
+}
+
+#home div:last-of-type {
+  width: 40%;
+  height: 40vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+}
+
+#home div:last-of-type::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 20px;
+  top: -30px;
+  border-radius: 0 80%;
+  border: solid 3px #745B33;
+}
+
+#home div:last-of-type img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 80%;
+}
+
+#home .button {
+  margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  #home {
+    padding-right: 5%;
+  }
+  #home div:first-of-type {
+    width: 100%;
+  }
+  #home div:last-of-type {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=home.css.map */

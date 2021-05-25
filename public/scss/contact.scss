@@ -1,0 +1,235 @@
+$cream: #745b33;
+
+#contact {
+  padding: 50px 5%;
+  padding-right: 0;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+
+  .title + ul {
+    list-style: none;
+    margin-top: 30px;
+    li {
+      display: flex;
+      h3 {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .icon {
+    width: 20px;
+  }
+
+  > div:first-of-type {
+    width: 40%;
+  }
+
+  > div:last-of-type {
+    width: 40%;
+    height: 40vw;
+    align-self: flex-end;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 20px;
+      top: -30px;
+      border-radius: 0 80%;
+      border: solid 3px $cream;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 80%;
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
+    position: relative;
+
+    input,
+    textarea {
+      outline: none;
+      border: none;
+      border-bottom: 3px solid $cream;
+      line-height: auto;
+      margin-top: 60px;
+      padding: 10px 0;
+    }
+
+    #email,
+    label[for='email'],
+    label[for='email'] + .error {
+      grid-row: 2;
+      grid-column: 1 / 3;
+    }
+
+    #message,
+    label[for='message'],
+    label[for='message'] + .error {
+      grid-row: 3;
+      grid-column: 1 / 3;
+    }
+
+    #lastname,
+    label[for='lastname'],
+    label[for='lastname'] + .error {
+      grid-column: 1;
+      grid-row: 1;
+      margin-right: 15px;
+    }
+
+    #firstname,
+    label[for='firstname'],
+    label[for='firstname'] + .error {
+      grid-column: 2;
+      grid-row: 1;
+      margin-left: 15px;
+    }
+
+    label.focus {
+      margin-top: 35px;
+      font-size: 15px;
+    }
+
+    label {
+      position: relative;
+      margin-top: 70px;
+      height: fit-content;
+      display: inline-block;
+      color: $cream;
+      transition: margin-top 0.3s, font-size 0.3s;
+      cursor: text;
+    }
+
+    textarea {
+      display: block;
+      height: 200px;
+      resize: none;
+    }
+
+    .error {
+      position: relative;
+      top: 100%;
+      margin-top: 10px;
+      color: red;
+      height: fit-content;
+    }
+
+    .g-recaptcha {
+      z-index: 0;
+    }
+
+    .captcha-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      grid-column: 1 / 3;
+    }
+
+    .captcha-wrapper,
+    .captcha-wrapper .error,
+    .captcha-wrapper + div {
+      grid-column: 2;
+      margin-top: 50px;
+    }
+
+    .captcha-wrapper .error {
+      top: 0;
+      margin: 10px 0;
+    }
+
+    .captcha-wrapper + div {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  #contact > div:first-of-type {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #contact {
+    padding-right: 5%;
+
+    > div:first-of-type {
+      width: 100%;
+    }
+
+    > div:last-of-type {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+
+    form {
+      .captcha-wrapper {
+        grid-column: 1;
+        align-items: flex-start;
+      }
+      .captcha-wrapper + div {
+        align-items: center;
+        justify-content: flex-start;
+        grid-column: 1;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  label.focus {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact form {
+    #lastname,
+    label[for='lastname'],
+    label[for='lastname'] + .error {
+      grid-column: 1 / 3;
+      grid-row: 1;
+      margin-right: 0;
+    }
+
+    #firstname,
+    label[for='firstname'],
+    label[for='firstname'] + .error {
+      grid-column: 1 / 3;
+      grid-row: 2;
+      margin-left: 0;
+    }
+
+    #email,
+    label[for='email'],
+    label[for='email'] + .error {
+      grid-row: 3;
+    }
+
+    #message,
+    label[for='message'],
+    label[for='message'] + .error {
+      grid-row: 4;
+    }
+
+    .captcha-wrapper {
+      grid-column: 1 / 3;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+$cream: #745B33;
+$lightcream: #f8f8f8;
+
+#care {
+  padding: 50px 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card:last-of-type p {
+    margin: 20px;
+  } 
+
+  .cards {
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+
+    >div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+
+    .card-1 header {
+      background: url(../images/1.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-2 header {
+      background: url(../images/4.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-3 header {
+      background: url(../images/2.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-4 header {
+      background: url(../images/3.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card {
+      background: $lightcream;
+      box-shadow: 0 0 10px #ddd;
+
+      header {
+        height: 200px;
+        width: 100%;
+
+        +div {
+          overflow-x: auto;
+          position: relative;
+          padding: 20px;
+        }
+      }
+
+      table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+        text-align: left;
+
+        .header-text {
+          font-weight: 600;
+        }
+
+        .title-2,
+        .title-3 {
+          color: $cream;
+        }
+
+        .type-column {
+          min-width: 150px;
+        }
+
+        tr {
+
+          th,
+          td {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  #care .cards .card {
+    width: 100vw;
+  }
+
+}

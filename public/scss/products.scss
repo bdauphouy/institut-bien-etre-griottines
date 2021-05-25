@@ -1,0 +1,27 @@
+#products {
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  div {
+    width: 40%;
+    min-width: 500px;
+  }
+  .subtitle {
+    text-align: justify;
+    margin-top: 30px;
+  }
+  .button {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #products div {
+    width: 100%;
+    min-width: unset;
+  }
+
+}

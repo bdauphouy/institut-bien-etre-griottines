@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="/css/care.css" />
+
+<% const decimalToHours = (time) => { %> <% let hours =
+Math.round(Math.floor(time)) %> <% let minutes = Math.round(time * 60 % 60) %>
+<% if (minutes === 0) return hours + 'h' %> <% if (hours === 0) return minutes +
+'min' %> <% if (hours > 0 && minutes > 0) return hours + 'h' + minutes %> <% }
+%>
+
+<section id="care">
+  <h2 class="title">Soins</h2>
+  <div class="cards">
+    <div>
+      <div class="card card-1">
+        <header></header>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th class="title-2"><%= data.care[0].title %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td class="header-text">Type</td>
+                <td class="header-text">Durée</td>
+                <td class="header-text">Prix</td>
+              </tr>
+              <% data.care[0].categories.forEach(category => { %>
+              <tr>
+                <th class="title-3"><%= category.title %></th>
+              </tr>
+              <% category.formulas.forEach(formula => { %> <% formula.duration =
+              decimalToHours(formula.duration) %>
+              <tr>
+                <td><%= formula.title %></td>
+                <td class="type-column"><%= formula.type %></td>
+                <td><%= formula.duration != '0h' ? formula.duration : '' %></td>
+                <td><%= formula.price %>€</td>
+              </tr>
+              <% }) %> <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card card-2">
+        <header></header>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th class="title-2"><%= data.care[3].title %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td class="header-text">Type</td>
+                <td class="header-text">Durée</td>
+                <td class="header-text">Prix</td>
+              </tr>
+              <% data.care[3].formulas.forEach(formula => { %> <%
+              formula.duration = decimalToHours(formula.duration) %>
+              <tr>
+                <td><%= formula.title %></td>
+                <td class="type-column"><%= formula.type %></td>
+                <td><%= formula.duration != '0h' ? formula.duration : '' %></td>
+                <td><%= formula.price %>€</td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+        <p class="subtitle-2">
+          * Sensation de bien-être, dynamisation et rechargement d’énergies
+          grâce à l’effet des couleurs (les couleurs régénèrent le corps,
+          agissent sur l’émotionnel) sur votre corps, chacune agissant
+          différemment.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="card card-3">
+        <header></header>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th class="title-2"><%= data.care[1].title %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td class="header-text">Type</td>
+                <td class="header-text">Durée</td>
+                <td class="header-text">Prix</td>
+              </tr>
+              <% data.care[1].categories.forEach(category => { %>
+              <tr>
+                <th class="title-3"><%= category.title %></th>
+              </tr>
+              <% category.formulas.forEach(formula => { %> <% formula.duration =
+              decimalToHours(formula.duration) %>
+              <tr>
+                <td><%= formula.title %></td>
+                <td class="type-column"><%= formula.type %></td>
+                <td><%= formula.duration != '0h' ? formula.duration : '' %></td>
+                <td><%= formula.price %>€</td>
+              </tr>
+              <% }) %> <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card card-4">
+        <header></header>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th class="title-2"><%= data.care[2].title %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td class="header-text">Type</td>
+                <td class="header-text">Durée</td>
+                <td class="header-text">Prix</td>
+              </tr>
+              <% data.care[2].formulas.forEach(formula => { %> <%
+              formula.duration = decimalToHours(formula.duration) %>
+              <tr>
+                <td><%= formula.title %></td>
+                <td class="type-column"><%= formula.type %></td>
+                <td><%= formula.duration != '0h' ? formula.duration : '' %></td>
+                <td><%= formula.price %>€</td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

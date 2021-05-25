@@ -1,0 +1,403 @@
+[
+  {
+    "care": [
+      {
+        "id": 1,
+        "title": "Les soins esthétiques",
+        "categories": [
+          {
+            "id": 1,
+            "title": "Soins du visages",
+            "formulas": [
+              {
+                "id": 1,
+                "title": "Soin Spécial ado et peau jeune",
+                "type": "Tous types de peaux",
+                "duration": 0.5,
+                "price": 32
+              },
+              {
+                "id": 2,
+                "title": "Soin Tamanu de Madagascar",
+                "type": "Peaux désydratées, sensibles",
+                "duration": 1,
+                "price": 58
+              },
+              {
+                "id": 3,
+                "title": "Soin Yangu du Kenya",
+                "type": "Peaux mixtes à grasses",
+                "duration": 1,
+                "price": 55
+              },
+              {
+                "id": 4,
+                "title": "Soin Nigelle d’Egypte",
+                "type": "Peaux sèches",
+                "duration": 1.25,
+                "price": 65
+              },
+              {
+                "id": 5,
+                "title": "Soin Son de Riz d'Inde",
+                "type": "Peaux très sèches",
+                "duration": 1.25,
+                "price": 70
+              },
+              {
+                "id": 6,
+                "title": "Soin Spécial ado et peau jeune",
+                "type": "Tous types de peau",
+                "duration": 0.5,
+                "price": 32
+              },
+              {
+                "id": 7,
+                "title": "Soin Inca Inchi du Pérou",
+                "type": "Peaux matures",
+                "duration": 1.5,
+                "price": 75
+              },
+              {
+                "id": 8,
+                "title": "Soin Maori de Nouvelle Zélande",
+                "type": "Soin pour Homme",
+                "duration": 1,
+                "price": 57
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Soins des mains et des pieds",
+            "formulas": [
+              {
+                "id": 1,
+                "title": "Soins des Mains",
+                "type": "",
+                "duration": 1,
+                "price": 46
+              },
+              {
+                "id": 2,
+                "title": "Soins des Pieds",
+                "type": "",
+                "duration": 1,
+                "price": 46
+              },
+              {
+                "id": 3,
+                "title": "Pose de vernis",
+                "type": "",
+                "duration": "",
+                "price": 7
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Maquillages",
+            "formulas": [
+              {
+                "id": 1,
+                "title": "Jour",
+                "type": "",
+                "duration": "",
+                "price": 18
+              },
+              {
+                "id": 2,
+                "title": "Cocktail/Soirée",
+                "type": "",
+                "duration": "",
+                "price": 25
+              },
+              {
+                "id": 3,
+                "title": "Forfait Mariée Essai + Jour J",
+                "type": "",
+                "duration": "",
+                "price": 45
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Epilations",
+            "formulas": [
+              {
+                "id": 1,
+                "title": "Sourcils ou lèvres",
+                "type": "",
+                "duration": "",
+                "price": 8
+              },
+              {
+                "id": 2,
+                "title": "Visage",
+                "type": "Sourcils, lèvres, menton",
+                "duration": "",
+                "price": 16
+              },
+              {
+                "id": 3,
+                "title": "Demi Jambes",
+                "type": "",
+                "duration": "",
+                "price": 19
+              },
+              {
+                "id": 4,
+                "title": "Jambes entières",
+                "type": "",
+                "duration": "",
+                "price": 28
+              },
+              {
+                "id": 5,
+                "title": "Aisselles",
+                "type": "",
+                "duration": "",
+                "price": 11
+              },
+              {
+                "id": 6,
+                "title": "Maillot classique",
+                "type": "",
+                "duration": "",
+                "price": 14
+              },
+              {
+                "id": 7,
+                "title": "Maillot échancré",
+                "type": "",
+                "duration": "",
+                "price": 18
+              },
+              {
+                "id": 8,
+                "title": "Maillot intégral",
+                "type": "",
+                "duration": "",
+                "price": 23
+              },
+              {
+                "id": 9,
+                "title": "Demi Jambes + Maillot classique + Aisselles",
+                "type": "Supplément Maillot intégral à 5€",
+                "duration": "",
+                "price": 39
+              },
+              {
+                "id": 10,
+                "title": "Jambes complètes + Maillot échancré + Aisselles Sourcils",
+                "type": "",
+                "duration": "",
+                "price": 55
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Les soins du corps",
+        "categories": [
+          {
+            "id": 1,
+            "title": "Gommages Modelages",
+            "formulas": [
+              {
+                "id": 1,
+                "title": "Gommage au choix",
+                "type": "",
+                "duration": 0.5,
+                "price": 36
+              },
+              {
+                "id": 2,
+                "title": "Gommage suivi d'une Hydratation",
+                "type": "",
+                "duration": 1,
+                "price": 56
+              },
+              {
+                "id": 3,
+                "title": "Gommage suivi d'un Modelage",
+                "type": "",
+                "duration": 1,
+                "price": 65
+              },
+              {
+                "id": 4,
+                "title": "Gommage suivi d'un Modelage",
+                "type": "",
+                "duration": 1.25,
+                "price": 69
+              },
+              {
+                "id": 5,
+                "title": "Modelage relaxant",
+                "type": "",
+                "duration": 0.5833,
+                "price": 40
+              },
+              {
+                "id": 6,
+                "title": "Modelage relaxant ",
+                "type": "",
+                "duration": 1,
+                "price": 62
+              },
+              {
+                "id": 7,
+                "title": "Modelage tonifiant aux bambous",
+                "type": "",
+                "duration": "",
+                "price": 0
+              },
+              {
+                "id": 8,
+                "title": "Modelage Signature",
+                "type": "",
+                "duration": 1.1667,
+                "price": 70
+              },
+              {
+                "id": 9,
+                "title": "Modelage aux pierres chaudes",
+                "type": "",
+                "duration": 1.25,
+                "price": 78
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Soins du dos",
+            "formulas": [
+              {
+                "id": 1,
+                "title": "Modelage du dos",
+                "type": "",
+                "duration": 0.3333,
+                "price": 25
+              },
+              {
+                "id": 2,
+                "title": "Cataplasme dos suivi d'un Modelage dos",
+                "type": "",
+                "duration": 0.6666,
+                "price": 40
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "Soins spécifiques",
+            "formulas": [
+              {
+                "id": 1,
+                "title": "Réflexologie Découverte",
+                "type": "",
+                "duration": 0.4167,
+                "price": 30
+              },
+              {
+                "id": 2,
+                "title": "Réflexologie Plantaire",
+                "type": "",
+                "duration": 0.8333,
+                "price": 55
+              },
+              {
+                "id": 3,
+                "title": "Réflexologie Visage, Mains et Pieds",
+                "type": "",
+                "duration": 1,
+                "price": 65
+              },
+              {
+                "id": 4,
+                "title": "Zen shiatsu Corps Visage",
+                "type": "",
+                "duration": 1,
+                "price": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Les rituels",
+        "formulas": [
+          {
+            "id": 1,
+            "title": "Rituel de la tête aux pieds + Soin du visage complet + Modelage du corps californien",
+            "duration": 2,
+            "price": 125
+          },
+          {
+            "id": 2,
+            "title": "Secret du Sahara Gommage corps au sable noir + Enveloppement au beurre des délices + Modelage du corps au voile d’or",
+            "duration": 1.5,
+            "price": 98
+          },
+          {
+            "id": 3,
+            "title": "Gourmandises Gommage corps au sucre de canne + Enveloppement au miel de fleurs + Modelage relaxant et sensoriel",
+            "duration": 1.5,
+            "price": 98
+          },
+          {
+            "id": 4,
+            "title": "Douceur du Dos + Gommage du dos Cataplasmes aux beurre des délices + Modelage du dos",
+            "duration": 2,
+            "price": 125
+          },
+          {
+            "id": 5,
+            "title": "Légèreté des Jambes + Gommage des jambes + Enveloppement + Modelage des jambes",
+            "duration": 2,
+            "price": 125
+          },
+          {
+            "id": 6,
+            "title": "Cure Silhouette + La traversée des Eléments + Gommage corps + Modelage africain + Enveloppement volcanique",
+            "type": "1 séance",
+            "duration": "",
+            "price": 75
+          },
+          {
+            "id": 7,
+            "title": "Cure Silhouette + La traversée des Eléments + Gommage corps + Modelage africain + Enveloppement volcanique",
+            "type": "8 séances",
+            "duration": "",
+            "price": 525
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Luminothérapie*",
+        "formulas": [
+          {
+            "id": 1,
+            "title": "Luminothérapie",
+            "type": "1 séance",
+            "duration": 0.5,
+            "price": 13
+          },
+          {
+            "id": 2,
+            "title": "Luminothérapie",
+            "type": "10 séances",
+            "duration": 0.5,
+            "price": 110
+          }
+        ]
+      }
+    ]
+  }
+]

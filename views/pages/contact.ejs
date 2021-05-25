@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/css/contact.css">
+<script src="/js/contact.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<section id="contact">
+  <div>
+    <h2 class="title">Contact</h2>
+    <ul>
+      <li>
+        <img src="/images/map-marker.svg" alt="map-marker" class="icon">
+        <h3 class="subtitle">2 Rue des Moulins, 75000 Paris</h3>
+      </li>
+      <li>
+        <img src="/images/email.svg" alt="email" class="icon">
+        <h3 class="subtitle">info@institut-bellevue.fr</h3>
+      </li>
+      <li>
+        <img src="/images/phone.svg" alt="phone" class="icon">
+        <h3 class="subtitle">0607080910</h3>
+      </li>
+    </ul>
+    <form action="send-message" method="POST">
+      <input type="text" id="lastname" name="lastname" class="subtitle" required>
+      <label for="lastname" class="subtitle">Nom</label>
+      <h3 class="error"></h3>
+      <input type="text" id="firstname" name="firstname" class="subtitle" required>
+      <label for="firstname" class="subtitle">Prénom</label>
+      <h3 class="error"></h3>
+      <input type="email" id="email" name="email" class="subtitle">
+      <label for="email" class="subtitle">Email</label>
+      <h3 class="error"></h3>
+      <textarea id="message" name="message" class="subtitle"></textarea>
+      <label for="message" class="subtitle">Message</label>
+      <h3 class="error"></h3>
+      <div class="captcha-wrapper">
+        <div class="g-recaptcha" data-callback="recaptchaVerify" data-sitekey="6LcXCH0aAAAAADS4_5RvnEDFvHR33g49TCu4JL5H"></div>
+        <h3 class="error"></h3>
+      </div>
+      <div><button class="button">Envoyer</button></div>
+    </form>
+  </div>
+  <div>
+    <img src="/images/1.jpg" alt="zen">
+  </div>
+</section>
+<script>
+
+</script>
